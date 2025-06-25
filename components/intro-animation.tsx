@@ -72,7 +72,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
             }}
             transition={{ duration: 0.8 }}
           >
-            Creative Developer
+            Creative Developer & Graphics Designer
           </motion.p>
         </div>
       </motion.div>

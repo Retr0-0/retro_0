@@ -13,10 +13,10 @@ import PageTransition from "@/components/page-transition"
 const projects = [
   {
     id: 1,
-    title: "Digital Dreamscape",
-    description: "An interactive WebGL experience exploring abstract digital landscapes.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["WebGL", "Three.js", "React"],
+    title: "Facial Emotion Detection",
+    description: "A deep learning project that recognizes facial emotions from images using a CNN",
+    image: "/CNN4.png?height=600&width=800",
+    tags: ["Python", "Deep Learning", "Computer Vision"],
   },
   {
     id: 2,
@@ -82,7 +82,20 @@ export default function Projects() {
                       />
                     </div>
                     <CardContent className="p-6">
-                      <h2 className="text-xl font-semibold text-zinc-300 mb-2">{project.title}</h2>
+                      <h2 className="text-xl font-semibold text-zinc-300 mb-2">
+                        {project.id === 1 ? (
+                          <a
+                            href="https://github.com/Retr0-0/facial-emotion-detection-system"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-cyan-400 hover:underline hover:text-cyan-300 transition-colors"
+                          >
+                            {project.title}
+                          </a>
+                        ) : (
+                          project.title
+                        )}
+                      </h2>
                       <p className="text-zinc-400 mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag) => (
