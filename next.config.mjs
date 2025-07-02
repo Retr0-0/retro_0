@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Static export for GitHub Pages
+  // output: 'export', // REMOVED for Vercel deployment
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -10,7 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true, // Required for static export
+  trailingSlash: true, // Required for static export (optional, can be removed if not needed)
 }
 
 export default nextConfig
