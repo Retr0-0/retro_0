@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Retr0-0 Portfolio",
+  title: "Retro_0 | Designer & Developer",
   description: "Portfolio of Pratik Mishra",
 };
 
