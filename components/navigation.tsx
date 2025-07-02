@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,12 +26,19 @@ export default function Navigation() {
     >
       <Link href="/" className="text-zinc-400 hover:text-zinc-300 transition-colors">
         <motion.span
-          className="text-xl font-bold"
+          className="inline-block align-middle"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Retr0_0
+          <Image
+            src="/retr2.png"
+            alt="Retr0_0 Logo"
+            width={80}
+            height={80}
+            className="object-contain"
+            priority
+          />
         </motion.span>
       </Link>
 

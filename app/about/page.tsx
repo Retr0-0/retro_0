@@ -200,7 +200,7 @@ export default function About() {
                     <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
                   </svg>
                 </div>
-                <span className="text-zinc-500 text-sm">Figma</span>
+                <span className="text-zinc-500 text-sm">UI/UX</span>
               </div>
 
               {/* DaVinci Resolve */}

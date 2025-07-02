@@ -15,14 +15,18 @@ export default function Home() {
 
   useEffect(() => {
     setMounted(true)
-
-    // Check if this is the first visit
-    const hasVisited = sessionStorage.getItem("hasVisited")
-    if (hasVisited) {
-      setIntroComplete(true)
+    if (typeof window !== 'undefined') {
+      const played = sessionStorage.getItem('introPlayed');
+      if (played) {
+        setIntroComplete(true);
     } else {
-      // Set the flag for future visits in this session
-      sessionStorage.setItem("hasVisited", "true")
+        setIntroComplete(false);
+        sessionStorage.setItem('introPlayed', 'true');
+      }
+      // Reset the flag on full reload or close
+      window.addEventListener('beforeunload', () => {
+        sessionStorage.removeItem('introPlayed');
+      });
     }
   }, [])
 

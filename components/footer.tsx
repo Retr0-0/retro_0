@@ -9,15 +9,15 @@ export default function Footer() {
           © {new Date().getFullYear()} Pratik Mishra. All rights reserved.
         </div>
         <div className="flex space-x-6">
-          <Link href="https://github.com" className="text-zinc-600 hover:text-zinc-400 transition-colors">
+          <Link href="https://github.com/Retr0-0" className="text-zinc-600 hover:text-zinc-400 transition-colors">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="https://twitter.com" className="text-zinc-600 hover:text-zinc-400 transition-colors">
+          <Link href="https://x.com/Retr0Booming" className="text-zinc-600 hover:text-zinc-400 transition-colors">
             <Twitter className="h-5 w-5" />
-            <span className="sr-only">Twitter</span>
+            <span className="sr-only">X (Twitter)</span>
           </Link>
-          <Link href="https://linkedin.com" className="text-zinc-600 hover:text-zinc-400 transition-colors">
+          <Link href="https://linkedin.com/in/pratikmis14" className="text-zinc-600 hover:text-zinc-400 transition-colors">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
