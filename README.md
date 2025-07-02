@@ -1,4 +1,4 @@
-# Retr0Portfolio
+# Retro_0
 
 Welcome to my personal portfolio, a showcase of my skills, projects, and professional journey! This repository hosts the code for my online portfolio, designed to provide visitors with a comprehensive overview of my work and capabilities as a developer.
 
