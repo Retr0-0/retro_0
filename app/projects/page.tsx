@@ -10,6 +10,7 @@ import Footer from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import PageTransition from "@/components/page-transition"
 import { useState } from "react"
+import OptimizedImage from "@/components/OptimizedImage"
 
 const projects = [
   {
@@ -691,7 +692,7 @@ export default function Projects() {
                         onClick={() => { setShowArpGalleryModal(true); setArpGalleryIndex(0); }}
                         aria-label="Open AR Filter Gallery"
                       >
-                        <img
+                        <OptimizedImage
                           src="/ARPthumb.png"
                           alt="AR Filter Video Thumbnail"
                           className="w-full h-full object-contain"
@@ -713,7 +714,7 @@ export default function Projects() {
                       onClick={() => { setShowArpGalleryModal(true); setArpGalleryIndex(2); }}
                       aria-label="Open Analytics in Gallery"
                     >
-                      <img
+                      <OptimizedImage
                         src="/ARP-analytics.png"
                         alt="Polio Rally AR Filter Analytics"
                         className="w-full max-h-[300px] object-contain"
@@ -762,7 +763,7 @@ export default function Projects() {
                       />
                     </div>
                   ) : (
-                    <img
+                    <OptimizedImage
                       src={arpGallery[arpGalleryIndex].src}
                       alt={arpGalleryIndex === 1 ? "AR Filter Mockup" : "AR Filter Analytics"}
                       className="rounded-lg w-full max-h-[70vh] object-contain bg-zinc-900"
@@ -806,11 +807,10 @@ export default function Projects() {
                 >
                   <Card className="bg-zinc-900 border-zinc-800 overflow-hidden">
                     <div className="relative h-48 w-full">
-                      <Image
+                      <OptimizedImage
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}
-                        fill
-                        className="object-cover"
+                        className="object-cover object-center w-full h-full"
                       />
                       {floatingTagMap[String(project.id)] && (
                         <div className="absolute top-1 left-1 flex gap-2 z-10">
@@ -967,7 +967,7 @@ export default function Projects() {
                           <h4 className="text-lg font-semibold text-zinc-300 mb-2">{heading}</h4>
                           {imgCount === 1 ? (
                             <div className="flex justify-center w-full mb-2">
-                              <img
+                              <OptimizedImage
                                 key={logoSectionImages[sectionIdx][0]}
                                 src={logoSectionImages[sectionIdx][0]}
                                 alt={`${heading} 1`}
@@ -985,7 +985,7 @@ export default function Projects() {
                           ) : imgCount === 2 ? (
                             <div className="grid grid-cols-2 gap-4 mb-2 mx-auto" style={{ justifyItems: 'center' }}>
                               {logoSectionImages[sectionIdx].map((img, idx) => (
-                                <img
+                                <OptimizedImage
                                   key={img}
                                   src={img}
                                   alt={`${heading} ${idx + 1}`}
@@ -1004,7 +1004,7 @@ export default function Projects() {
                           ) : imgCount === 3 ? (
                             <div className="grid grid-cols-3 gap-4 mb-2 mx-auto" style={{ justifyItems: 'center' }}>
                               {logoSectionImages[sectionIdx].map((img, idx) => (
-                                <img
+                                <OptimizedImage
                                   key={img}
                                   src={img}
                                   alt={`${heading} ${idx + 1}`}
@@ -1026,7 +1026,7 @@ export default function Projects() {
                               style={{ justifyItems: 'center' }}
                             >
                               {logoSectionImages[sectionIdx].map((img, idx) => (
-                                <img
+                                <OptimizedImage
                                   key={img}
                                   src={img}
                                   alt={`${heading} ${idx + 1}`}

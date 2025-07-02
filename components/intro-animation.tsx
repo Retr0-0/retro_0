@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import OptimizedImage from "./OptimizedImage"
 
 interface IntroAnimationProps {
   onComplete: () => void
@@ -45,11 +46,10 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 transition={{ duration: 0.8 }}
                 className="absolute inset-0 flex items-center justify-center"
               >
-                <img
+                <OptimizedImage
                   src="/retr2.png"
                   alt="Retr0_0 Logo"
                   className="h-32 md:h-56 lg:h-72 w-auto object-contain drop-shadow-lg"
-                  style={{}}
                 />
               </motion.div>
             )}

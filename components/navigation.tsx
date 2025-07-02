@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import Image from "next/image"
+import OptimizedImage from "./OptimizedImage"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,13 +31,12 @@ export default function Navigation() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Image
+          <OptimizedImage
             src="/retr2.png"
             alt="Retr0_0 Logo"
             width={80}
             height={80}
             className="object-contain"
-            priority
           />
         </motion.span>
       </Link>

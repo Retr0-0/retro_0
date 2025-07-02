@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import PageTransition from "@/components/page-transition"
+import OptimizedImage from "@/components/OptimizedImage"
 
 export default function About() {
   return (
@@ -36,13 +37,12 @@ export default function About() {
             <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mb-8">
               {/* Image */}
               <div className="w-full flex justify-center md:justify-end md:w-auto order-1 md:order-2 mb-4 md:mb-0">
-                <Image
-                  src="/placeholder-user1.png" // Change to your image path
+                <OptimizedImage
+                  src="/placeholder-user1.png"
                   alt="Pratik Mishra"
                   width={250}
                   height={250}
                   className="rounded-xl border-2 border-zinc-800 shadow-lg object-cover"
-                  priority
                 />
               </div>
               {/* Text */}
