@@ -37,6 +37,7 @@ export default function Navigation() {
             width={80}
             height={80}
             className="object-contain"
+            loading="eager"
           />
         </motion.span>
       </Link>

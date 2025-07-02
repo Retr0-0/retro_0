@@ -50,6 +50,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                   src="/retr2.png"
                   alt="Retr0_0 Logo"
                   className="h-32 md:h-56 lg:h-72 w-auto object-contain drop-shadow-lg"
+                  loading="eager"
                 />
               </motion.div>
             )}
