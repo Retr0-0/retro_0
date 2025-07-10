@@ -313,7 +313,7 @@ export default function Projects() {
               </Link>
             </Button>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-zinc-500 mb-6">Projects</h1>
+          <h1 className="jacquard24 text-4xl md:text-5xl font-bold tracking-wide text-zinc-500 mb-6">Projects</h1>
           {/* Dropdown Filter (now below heading) */}
           <form
             className="flex flex-col sm:flex-row gap-4 items-start sm:items-end mb-12"

@@ -61,3 +61,16 @@ body {
   }
 }
 
+@font-face {
+  font-family: 'Jacquard24-Regular';
+  src: url('/fonts/Jacquard24-Regular.woff2') format('woff2'),
+       url('/fonts/Jacquard24-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.jacquard24 {
+  font-family: 'Jacquard24-Regular', cursive, sans-serif;
+}
+

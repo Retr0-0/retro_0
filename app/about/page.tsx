@@ -31,7 +31,7 @@ export default function About() {
               </Link>
             </Button>
 
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-zinc-500 mb-8">About Me</h1>
+            <h1 className="jacquard24 text-4xl md:text-5xl font-bold tracking-wide text-zinc-500 mb-8">About Me</h1>
 
             {/* Flex container: image + intro paragraphs */}
             <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mb-8">
@@ -48,7 +48,7 @@ export default function About() {
               {/* Text */}
               <div className="flex-1 space-y-6 text-zinc-400 order-2 md:order-1">
                 <p className="text-lg">
-                  Hi, I&apos;m Pratik Mishra, also known as Retr0_0. I&apos;m a creative developer and digital artist passionate
+                  Hi, I&apos;m Pratik Mishra, also known as <span className="jacquard24 text-2xl align-middle">Retr0_0</span>. I&apos;m a creative developer and digital artist passionate
                   about building immersive digital experiences.
                 </p>
                 <p className="text-lg">

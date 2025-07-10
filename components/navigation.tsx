@@ -51,7 +51,7 @@ export default function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.4 + index * 0.1 }}
           >
-            <Link href={item.path} className="text-zinc-500 hover:text-zinc-300 transition-colors">
+            <Link href={item.path} className="jacquard24 tracking-wide text-2xl text-zinc-500 hover:text-zinc-300 transition-colors">
               {item.name}
             </Link>
           </motion.div>
@@ -79,7 +79,7 @@ export default function Navigation() {
                 <Link
                   key={item.path}
                   href={item.path}
-                  className="text-xl text-zinc-400 hover:text-zinc-300 transition-colors"
+                  className="jacquard24 tracking-wide text-2xl text-xl text-zinc-400 hover:text-zinc-300 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

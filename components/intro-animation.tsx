@@ -58,7 +58,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
 
           {/* Main name reveal */}
           <motion.h1
-            className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-zinc-500"
+            className="jacquard24 text-white tracking-wide text-6xl md:text-8xl lg:text-9xl font-bold text-zinc-500"
             initial={{ opacity: 0, y: 40 }}
             animate={{
               opacity: step >= 1 ? 1 : 0,

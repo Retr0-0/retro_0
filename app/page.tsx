@@ -48,7 +48,7 @@ export default function Home() {
           }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-zinc-500 mb-6">
+          <h1 className="jacquard24 text-white tracking-wide text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
             Pratik Mishra
           </h1>
           <p className="text-xl md:text-2xl text-zinc-600 mb-8 max-w-2xl mx-auto">
